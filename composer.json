@@ -1,5 +1,6 @@
 {
 	"name":        "germania-kg/openingtimes",
+  "description": "Interfaces and implementation for Opening Hours and Times",
 
 	"type":        "library",
 	"license":     "MIT",
