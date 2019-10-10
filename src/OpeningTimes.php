@@ -17,6 +17,15 @@ class OpeningTimes implements OpeningTimesInterface
 
 
 	/**
+	 * @inheritDoc
+	 */
+	public function jsonSerialize()
+	{
+		return $this->days;
+	}
+
+
+	/**
 	 * @param  string $day   Day name, e.g. "monday", "tuesday"
 	 * @return string|null   Opening times as text
 	 */

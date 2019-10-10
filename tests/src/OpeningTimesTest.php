@@ -10,12 +10,41 @@ class OpeningTimesTest extends \PHPUnit\Framework\TestCase
 	{
 		$sut = new OpeningTimes;
 		$this->assertInstanceOf( OpeningTimesInterface::class, $sut);
+		$this->assertInstanceOf( \JsonSerializable::class, $sut);
 		$this->assertIsIterable( $sut);
 
 		$this->assertNull( $sut->getDay("invalid_day"));
 
 		return $sut;
 	}
+
+	/**
+	 * @depends testInstantiation
+	 */
+	public function testIterator($sut )
+	{
+		$sut->setMonday( "foobar" );
+		$iterator_result = $sut->getIterator();
+		$iterator_result_array = iterator_to_array($iterator_result);
+
+		$this->assertArrayHasKey("monday", $iterator_result_array);
+		$this->assertArrayNotHasKey("friday", $iterator_result_array);
+	}
+
+
+	/**
+	 * @depends testInstantiation
+	 */
+	public function testJson($sut )
+	{
+		$sut->setMonday( "foobar" );
+		$json_result = $sut->JsonSerialize();
+
+		$this->assertArrayHasKey("monday", $json_result);
+		$this->assertArrayNotHasKey("friday", $json_result);
+	}
+
+
 
 
 
