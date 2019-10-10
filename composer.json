@@ -1,5 +1,5 @@
 {
-	"name":        "germania-kg/opening-hours",
+	"name": "germania-kg/opening-hours",
   "description": "Interfaces and implementation for Opening Hours and Times",
 
 	"type":        "library",
