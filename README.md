@@ -8,6 +8,14 @@
 
 
 
+## Installation
+
+```bash
+$ composer require germania-kg/openingtimes
+```
+
+
+
 ## Usage
 
 **OpeningTimesInterface**
