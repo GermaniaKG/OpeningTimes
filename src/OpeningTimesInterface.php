@@ -1,7 +1,7 @@
 <?php
 namespace Germania\OpeningTimes;
 
-interface OpeningTimesInterface extends \IteratorAggregate
+interface OpeningTimesInterface extends \IteratorAggregate, \JsonSerializable
 {
 
 	public function getDay( string $day ) : ?string;
