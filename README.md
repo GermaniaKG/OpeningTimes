@@ -6,8 +6,8 @@
 
 # Germania KG · Opening Hours
 
-[![Packagist](https://img.shields.io/packagist/v/germania-kg/openingtimes.svg?style=flat)](https://packagist.org/packages/germania-kg/openingtimes)
-[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/openingtimes.svg)](https://packagist.org/packages/germania-kg/openingtimes)
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/opening-hours.svg?style=flat)](https://packagist.org/packages/germania-kg/opening-hours)
+[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/opening-hours.svg)](https://packagist.org/packages/germania-kg/opening-hours)
 [![Build Status](https://img.shields.io/travis/GermaniaKG/OpeningTimes.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/OpeningTimes)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/OpeningTimes/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/OpeningTimes/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/OpeningTimes/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/OpeningTimes/?branch=master)
