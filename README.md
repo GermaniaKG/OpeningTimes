@@ -4,7 +4,7 @@
 
 
 
-# Germania KG · OpeningTimes
+# Germania KG · Opening Hours
 
 [![Packagist](https://img.shields.io/packagist/v/germania-kg/openingtimes.svg?style=flat)](https://packagist.org/packages/germania-kg/openingtimes)
 [![PHP version](https://img.shields.io/packagist/php-v/germania-kg/openingtimes.svg)](https://packagist.org/packages/germania-kg/openingtimes)
@@ -18,7 +18,7 @@
 ## Installation with Composer
 
 ```bash
-$ composer require germania-kg/openingtimes
+$ composer require germania-kg/opening-hours
 ```
 
 
