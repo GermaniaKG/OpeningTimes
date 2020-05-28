@@ -18,6 +18,18 @@ class OpeningTimesTest extends \PHPUnit\Framework\TestCase
 		return $sut;
 	}
 
+
+	public function testDescription()
+	{
+		$sut = new OpeningTimes;
+		$this->assertNull( $sut->getDescription());
+		$descr = "foobar";
+		$this->assertEquals( $descr, $sut->setDescription($descr)->getDescription());
+		return $sut;
+	}
+
+
+
 	/**
 	 * @depends testInstantiation
 	 */

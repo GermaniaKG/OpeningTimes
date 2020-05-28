@@ -33,6 +33,9 @@ interface Germania\OpeningTimes\OpeningTimesInterface
 public function getDay( string $day ) : ?string;
 public function setDay( string $day, string $times = null );
 
+public function getDescription() : ?string;
+public function setDescription( string $text = null);
+
 public function getMonday()    : ?string;
 public function getTuesday()   : ?string;
 public function getWednesday() : ?string;
