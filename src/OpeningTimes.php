@@ -5,6 +5,19 @@ class OpeningTimes implements OpeningTimesInterface
 {
 	protected $days = array();
 
+	public $description = null;
+
+
+	public function getDescription() : ?string
+	{
+		return $this->description;
+	}
+
+	public function setDescription( string $text = null) : self
+	{
+		$this->description = $text;
+		return $this;
+	}
 
 
 	/**
