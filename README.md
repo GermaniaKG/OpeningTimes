@@ -30,12 +30,15 @@ $ composer require germania-kg/opening-hours
 ```php
 interface Germania\OpeningTimes\OpeningTimesInterface
 
-public function getDay( string $day ) : ?string;
-public function setDay( string $day, string $times = null );
-
+// Textual description regarding the opening times
 public function getDescription() : ?string;
 public function setDescription( string $text = null);
 
+// Set information for certain days
+public function getDay( string $day ) : ?string;
+public function setDay( string $day, string $times = null );
+
+// Common day interceptors, getter and setter
 public function getMonday()    : ?string;
 public function getTuesday()   : ?string;
 public function getWednesday() : ?string;
@@ -51,6 +54,9 @@ public function getSunday()    : ?string;
 use Germania\OpeningTimes\OpeningTimes;
 
 $open = new OpeningTimes;
+
+$open->setDescription("nach Vereinbarung");
+$open->getDescription(); // "nach Vereinbarung"
 
 $open->setDay("monday", "09 to 18");
 $open->getDay("monday"); // "09 to 18"

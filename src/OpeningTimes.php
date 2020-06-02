@@ -5,14 +5,26 @@ class OpeningTimes implements OpeningTimesInterface
 {
 	protected $days = array();
 
+
+	/**
+	 * Stores text hint regarding opening times
+	 * @var string|null
+	 */
 	public $description = null;
 
 
+	/**
+	 * @inheritDoc
+	 */
 	public function getDescription() : ?string
 	{
 		return $this->description;
 	}
 
+
+	/**
+	 * @inheritDoc
+	 */
 	public function setDescription( string $text = null) : self
 	{
 		$this->description = $text;
