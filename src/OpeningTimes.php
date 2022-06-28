@@ -35,6 +35,7 @@ class OpeningTimes implements OpeningTimesInterface
 	/**
 	 * @inheritDoc
 	 */
+    #[\ReturnTypeWillChange]
 	public function getIterator()
 	{
 		return new \ArrayIterator( $this->days, \ArrayIterator::ARRAY_AS_PROPS );
@@ -44,6 +45,7 @@ class OpeningTimes implements OpeningTimesInterface
 	/**
 	 * @inheritDoc
 	 */
+    #[\ReturnTypeWillChange]
 	public function jsonSerialize()
 	{
 		return $this->days;
